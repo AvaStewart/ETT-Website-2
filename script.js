@@ -1,48 +1,23 @@
-// Glover Park site — small progressive-enhancement script.
-// Handles the mobile nav toggle and highlights the current section in the nav.
-
+// Glover Park — history timeline
+// Clicking a year swaps which panel of neighborhood history is shown.
 (function () {
-  'use strict';
+  var stops = document.querySelectorAll(".timeline__stop");
+  var panels = document.querySelectorAll(".timeline__panel");
 
-  var toggle = document.getElementById('nav-toggle');
-  var nav = document.getElementById('nav-links');
+  stops.forEach(function (stop) {
+    stop.addEventListener("click", function () {
+      var target = stop.getAttribute("data-panel");
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      var isOpen = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
+      stops.forEach(function (s) {
+        s.classList.toggle("is-active", s === stop);
+      });
 
-    // Close the menu after tapping a link (mobile).
-    nav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
+      panels.forEach(function (panel) {
+        panel.classList.toggle(
+          "is-active",
+          panel.getAttribute("data-panel") === target
+        );
       });
     });
-  }
-
-  // Highlight the nav link for the section currently in view.
-  var sections = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
-  var navLinks = nav ? Array.prototype.slice.call(nav.querySelectorAll('a')) : [];
-
-  if (sections.length && navLinks.length && 'IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            var id = entry.target.getAttribute('id');
-            navLinks.forEach(function (link) {
-              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
-            });
-          }
-        });
-      },
-      { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
-    );
-
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
-  }
+  });
 })();
