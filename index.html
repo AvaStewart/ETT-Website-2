@@ -2,253 +2,191 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Glover Park — Washington, D.C.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glover Park — A Washington, D.C. Neighborhood</title>
+<meta name="description" content="A one-page guide to Glover Park, the leafy Northwest D.C. neighborhood between Georgetown and Cathedral Heights.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site">
-  <div class="nav-inner">
-    <div class="wordmark">Glover Park<span class="dot">.</span></div>
-    <nav class="links" id="nav-links">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <span class="masthead__mark" aria-hidden="true">GP</span>
+    <nav class="masthead__nav" aria-label="Primary">
       <a href="#history">History</a>
-      <a href="#avenue">Wisconsin Ave</a>
-      <a href="#parks">Parks</a>
-      <a href="#community">Community</a>
-      <a href="#getting-here">Getting here</a>
+      <a href="#streets">Streets</a>
+      <a href="#green">Green Space</a>
+      <a href="#life">Neighborhood Life</a>
+      <a href="#getting-there">Getting There</a>
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Northwest Washington, D.C. · Ward 3</div>
-    <h1>A rowhouse hill<br>above <em>Georgetown</em>.</h1>
-    <p class="lede">Glover Park sits on high ground between Georgetown and the National Cathedral — a walkable strip of porch-front rowhouses, a busy Wisconsin Avenue commercial stretch, and a wooded park at its back door.</p>
-    <div class="hero-facts">
-      <div class="fact"><b>1926</b><span>Neighborhood name first appears in print</span></div>
-      <div class="fact"><b>Ward 3</b><span>D.C. council ward</span></div>
-      <div class="fact"><b>4</b><span>Neighbors: Georgetown, Burleith, Cathedral Heights, Woodley Park</span></div>
-      <div class="fact"><b>2</b><span>Rock Creek Park branches at its edges</span></div>
-    </div>
-  </div>
+<main id="main">
 
-  <svg class="skyline" viewBox="0 0 1080 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <rect x="0" y="0" width="1080" height="150" fill="var(--cream-2)"/>
-    <!-- simple rowhouse silhouette strip, varied rooflines -->
-    <g fill="var(--brick-tint)" opacity="0.55">
-      <rect x="0" y="70" width="60" height="80"/>
-      <polygon points="0,70 30,40 60,70"/>
-      <rect x="60" y="55" width="55" height="95"/>
-      <rect x="115" y="80" width="60" height="70"/>
-      <polygon points="115,80 145,55 175,80"/>
-      <rect x="175" y="65" width="50" height="85"/>
-      <rect x="225" y="90" width="58" height="60"/>
-      <rect x="283" y="50" width="60" height="100"/>
-      <polygon points="283,50 313,25 343,50"/>
-      <rect x="343" y="75" width="55" height="75"/>
-      <rect x="398" y="85" width="60" height="65"/>
-      <polygon points="398,85 428,60 458,85"/>
-      <rect x="458" y="60" width="50" height="90"/>
-      <rect x="508" y="95" width="58" height="55"/>
-      <rect x="566" y="55" width="60" height="95"/>
-      <polygon points="566,55 596,30 626,55"/>
-      <rect x="626" y="80" width="55" height="70"/>
-      <rect x="681" y="65" width="60" height="85"/>
-      <rect x="741" y="90" width="55" height="60"/>
-      <polygon points="741,90 768,65 796,90"/>
-      <rect x="796" y="50" width="60" height="100"/>
-      <rect x="856" y="78" width="55" height="72"/>
-      <rect x="911" y="60" width="60" height="90"/>
-      <polygon points="911,60 941,35 971,60"/>
-      <rect x="971" y="85" width="55" height="65"/>
-      <rect x="1026" y="70" width="54" height="80"/>
-    </g>
-    <g fill="var(--ivy-tint)" opacity="0.7">
-      <rect x="0" y="100" width="60" height="50"/>
-      <rect x="115" y="110" width="60" height="40"/>
-      <rect x="283" y="90" width="60" height="60"/>
-      <rect x="398" y="115" width="60" height="35"/>
-      <rect x="566" y="100" width="60" height="50"/>
-      <rect x="741" y="115" width="55" height="35"/>
-      <rect x="911" y="100" width="60" height="50"/>
-    </g>
-  </svg>
-</section>
+  <section class="hero">
+    <div class="hero__text">
+      <p class="hero__kicker">Northwest Washington, D.C.</p>
+      <h1 class="hero__title">Glover&nbsp;Park</h1>
+      <p class="hero__lede">A quiet grid of 1920s rowhouses tucked into a ridge above Rock Creek — named for the banker who gave the city its park system, and never quite letting anyone forget it.</p>
+    </div>
+    <svg class="hero__skyline" viewBox="0 0 1200 260" preserveAspectRatio="none" role="img" aria-label="Illustration of Glover Park rowhouse rooftops">
+      <rect x="0" y="0" width="1200" height="260" fill="none"/>
+      <g fill="var(--brick)">
+        <polygon points="0,180 60,180 60,130 30,100 0,130"/>
+        <polygon points="60,180 140,180 140,120 100,85 60,120"/>
+        <polygon points="140,180 210,180 210,140 175,110 140,140"/>
+      </g>
+      <g fill="var(--ivy)">
+        <polygon points="210,180 300,180 300,110 255,75 210,110"/>
+        <polygon points="300,180 370,180 370,135 335,105 300,135"/>
+      </g>
+      <g fill="var(--brick)">
+        <polygon points="370,180 450,180 450,115 410,80 370,115"/>
+        <polygon points="450,180 520,180 520,145 485,118 450,145"/>
+        <polygon points="520,180 610,180 610,105 565,68 520,105"/>
+      </g>
+      <g fill="var(--stone)" opacity="0.9">
+        <polygon points="610,180 680,180 680,130 645,100 610,130"/>
+        <polygon points="680,180 750,180 750,150 715,122 680,150"/>
+      </g>
+      <g fill="var(--ivy)">
+        <polygon points="750,180 840,180 840,110 795,72 750,110"/>
+        <polygon points="840,180 910,180 910,140 875,112 840,140"/>
+      </g>
+      <g fill="var(--brick)">
+        <polygon points="910,180 990,180 990,120 950,85 910,120"/>
+        <polygon points="990,180 1060,180 1060,150 1025,122 990,150"/>
+        <polygon points="1060,180 1140,180 1140,112 1100,76 1060,112"/>
+        <polygon points="1140,180 1200,180 1200,140 1170,112 1140,140"/>
+      </g>
+      <rect x="0" y="178" width="1200" height="82" fill="var(--ink)"/>
+      <g fill="var(--brass)" opacity="0.85">
+        <rect x="90" y="150" width="10" height="28"/>
+        <rect x="330" y="145" width="10" height="30"/>
+        <rect x="580" y="140" width="10" height="32"/>
+        <rect x="820" y="148" width="10" height="30"/>
+        <rect x="1080" y="142" width="10" height="32"/>
+      </g>
+    </svg>
+  </section>
 
-<section id="history">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <h2>From market gardens<br>to porch fronts</h2>
-        <p>A century of Glover Park's development, from farmland to a named D.C. neighborhood.</p>
-      </div>
-      <div class="section-num">History</div>
+  <section id="history" class="section history">
+    <div class="section__head">
+      <h2>How a butcher's farmland became Glover Park</h2>
+      <p class="section__dek">Four names, four decades, one neighborhood.</p>
     </div>
-    <div class="history-grid">
-      <div>
-        <p class="pull">The eastern part of the neighborhood grew out of butchering and market-garden land on the north edge of Georgetown; the western part came from land bought by banker Charles C. Glover.</p>
-        <p>Glover, an influential late-19th and early-20th century banker and philanthropist, purchased land from the estate of butcher Henry Kengla. Residential development was fitful at first, but took off in earnest starting in 1926 — the year the name "Glover Park" first appeared in print.</p>
-        <p>The neighborhood's rowhouses and apartment buildings date largely from the 1920s and 1930s. Developer Benjamin H. Gruver marketed the new homes on spacious rooms, gas heat, and hardwood floors, pitching the area as a kind of English village within the city.</p>
-        <p>Glover himself is remembered well beyond this hillside: he's credited with helping create Rock Creek Park, the National Zoo, and Embassy Row through land donations that shaped much of Northwest Washington.</p>
-      </div>
-      <div class="timeline">
-        <div class="stop"><b>1600s</b><p>Land here was part of the colonial-era Salop tract, later folded into the Alliance estate.</p></div>
-        <div class="stop"><b>Pre-1900s</b><p>German immigrant and free Black market gardeners farmed the land, selling produce into Georgetown.</p></div>
-        <div class="stop"><b>1920s</b><p>Charles C. Glover buys land from the Kengla estate; residential building begins in earnest.</p></div>
-        <div class="stop"><b>1926</b><p>The name "Glover Park" appears in print for the first time.</p></div>
-        <div class="stop"><b>Today</b><p>A dense, walkable Ward 3 neighborhood of rowhouses, apartments, and a working commercial strip.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="avenue" class="alt">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <h2>Wisconsin Avenue</h2>
-        <p>The neighborhood's commercial spine, running the length of Glover Park.</p>
-      </div>
-      <div class="section-num">Eat &amp; shop</div>
+    <div class="timeline" role="list">
+      <button class="timeline__stop is-active" role="listitem" data-panel="0">
+        <span class="timeline__year">1850s</span>
+        <span class="timeline__label">Market gardens</span>
+      </button>
+      <button class="timeline__stop" role="listitem" data-panel="1">
+        <span class="timeline__year">1906</span>
+        <span class="timeline__label">Kengla's land</span>
+      </button>
+      <button class="timeline__stop" role="listitem" data-panel="2">
+        <span class="timeline__year">1926</span>
+        <span class="timeline__label">A name in print</span>
+      </button>
+      <button class="timeline__stop" role="listitem" data-panel="3">
+        <span class="timeline__year">Today</span>
+        <span class="timeline__label">English village, kept up</span>
+      </button>
     </div>
-    <div class="strip-list">
-      <div class="strip-item">
-        <div><span class="kind">Barbecue</span><h3>Rocklands</h3></div>
-        <p>Long-running smokehouse and a neighborhood institution on Wisconsin Ave.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Restaurant &amp; bar</span><h3>Town Hall</h3></div>
-        <p>A neighborhood gathering spot for a casual meal or a drink.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Peruvian</span><h3>Ceviche</h3></div>
-        <p>One of several sit-down restaurants along the avenue.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Indian</span><h3>Heritage India</h3></div>
-        <p>Long-standing Indian dining on Wisconsin Avenue.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Thai</span><h3>Busara</h3></div>
-        <p>Part of the strip's mix of international restaurants.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Grocery</span><h3>Whole Foods</h3></div>
-        <p>The neighborhood's main full-size grocery store.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Wine shop</span><h3>Pearson's Wine</h3></div>
-        <p>A longtime independent wine and spirits shop.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Hardware</span><h3>Glover Park Hardware</h3></div>
-        <p>The kind of local hardware store every walkable neighborhood needs.</p>
-      </div>
-      <div class="strip-item">
-        <div><span class="kind">Bar</span><h3>Bourbon</h3></div>
-        <p>A whiskey-forward bar that's part of the avenue's evening scene.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="parks">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <h2>Green edges</h2>
-        <p>Two branches of Rock Creek Park frame the neighborhood, plus a park at its center.</p>
-      </div>
-      <div class="section-num">Outdoors</div>
+    <div class="timeline__panels">
+      <p class="timeline__panel is-active" data-panel="0">Before there was a neighborhood, this ridge above Rock Creek was the northern edge of Georgetown's farmland — plots the city called <em>Wilberforce</em> and, less charitably, <em>Knave's Disappointment</em>. German immigrant families and free Black market gardeners worked the soil, growing produce for Georgetown's markets.</p>
+      <p class="timeline__panel" data-panel="1">Henry Kengla, a wealthy master butcher, spent decades quietly buying up land around what's now Tunlaw Road. When he died in 1906 at ninety-one, his holdings formed the core of what the neighborhood would become — bought soon after by banker and philanthropist Charles Carroll Glover, the man credited with creating Rock Creek Park itself.</p>
+      <p class="timeline__panel" data-panel="2">Residential development was fitful at first. Then, in 1926, developer Benjamin H. Gruver began marketing rowhouses here as an "English village" — gas heat, hardwood floors, and a name that stuck. <em>Glover Park</em> appeared in print for the first time that year, and the streets started filling in.</p>
+      <p class="timeline__panel" data-panel="3">The gardens are long gone, but the 1920s and '30s rowhouses they made room for are still the backbone of the neighborhood — joined by garden apartments, a stretch of Wisconsin Avenue shopfronts, and a border with Rock Creek Park's woods that hasn't moved in a century.</p>
     </div>
-    <div class="park-cards">
-      <div class="park-card">
-        <div>
-          <span class="tag">Western border</span>
-          <h3>Glover-Archbold Park</h3>
-        </div>
-        <p>A wooded ravine and extension of Rock Creek Park, named for Charles Glover and Anne Archbold, who each donated part of the land. It forms the neighborhood's entire western edge along 42nd Street.</p>
-      </div>
-      <div class="park-card">
-        <div>
-          <span class="tag">Southern border</span>
-          <h3>Whitehaven Park</h3>
-        </div>
-        <p>Another Rock Creek Park branch, marking where Glover Park gives way to Burleith and Georgetown to the south.</p>
-      </div>
-      <div class="park-card">
-        <div>
-          <span class="tag">In the neighborhood</span>
-          <h3>Guy Mason Park</h3>
-        </div>
-        <p>Sits between Wisconsin Avenue and the Naval Observatory grounds, just south of Calvert Street — a softball diamond, a children's playground, and an informal dog park.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="community" class="alt">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <h2>Who's here</h2>
-        <p>A young, family-friendly Ward 3 neighborhood with a low crime rate.</p>
-      </div>
-      <div class="section-num">Community</div>
+  <section id="streets" class="section streets">
+    <div class="section__head">
+      <h2>Finding your way around</h2>
+      <p class="section__dek">A small grid with a few landmarks to steer by.</p>
     </div>
-    <div class="comm-grid">
-      <div class="block">
-        <h3>Housing</h3>
-        <p>Mostly porch-front rowhouses from the 1920s and '30s, alongside apartment buildings — a mix that keeps the neighborhood denser and more walkable than much of upper Northwest.</p>
+    <dl class="fact-strip">
+      <div class="fact-strip__item">
+        <dt>Main street</dt>
+        <dd>Wisconsin Avenue NW, the commercial spine running north from Georgetown</dd>
+      </div>
+      <div class="fact-strip__item">
+        <dt>Neighbors</dt>
+        <dd>Georgetown to the south, Cathedral Heights to the north, Burleith to the west</dd>
+      </div>
+      <div class="fact-strip__item">
+        <dt>Namesake street</dt>
+        <dd>Tunlaw Road, running through the land Charles Glover once purchased from Henry Kengla</dd>
+      </div>
+      <div class="fact-strip__item">
+        <dt>Landmark uphill</dt>
+        <dd>The Washington National Cathedral, a short walk north</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="green" class="section green">
+    <div class="section__head">
+      <h2>Green space, close by</h2>
+      <p class="section__dek">The neighborhood Charles Glover's own park system nearly surrounds.</p>
+    </div>
+    <div class="card-row">
+      <article class="card">
+        <h3>Glover-Archbold Park</h3>
+        <p>A wooded stream valley trail running along the neighborhood's western edge, part of the National Park Service's Rock Creek Park system — the namesake's own legacy, still doing its job.</p>
+      </article>
+      <article class="card">
+        <h3>Guy Mason Recreation Center</h3>
+        <p>The neighborhood's community hub on Calvert Street: a rec center, gardens, and the lawn where the annual Glover Park Day festival sets up its stage.</p>
+      </article>
+      <article class="card">
+        <h3>Whitehaven Park</h3>
+        <p>A quieter trail spur just north, connecting into the wider network of parkland that laces through Upper Northwest.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="life" class="section life">
+    <div class="section__head">
+      <h2>Neighborhood life</h2>
+      <p class="section__dek">What fills the blocks between the trees.</p>
+    </div>
+    <div class="life__grid">
+      <div class="life__col">
+        <h3>On Wisconsin Avenue</h3>
+        <p>A walkable strip of restaurants, bars, and neighborhood shops carries most of the daily traffic — closer in scale to a small town's main street than to downtown D.C.</p>
+      </div>
+      <div class="life__col">
         <h3>Schools</h3>
-        <p>Benjamin Stoddert Elementary serves the neighborhood and is consistently rated among the District's stronger public elementary schools.</p>
+        <p>Stoddert Elementary and Hardy Middle School anchor the neighborhood's public education, both within walking distance of most homes.</p>
       </div>
-      <div class="block">
-        <h3>Notable neighbors</h3>
-        <ul class="plain">
-          <li>Several foreign embassies, including the large Russian embassy compound</li>
-          <li>Washington National Cathedral, just north across Fulton Street</li>
-          <li>The U.S. Naval Observatory and the Vice President's residence, just east</li>
-          <li>Georgetown University, a short walk south</li>
-        </ul>
-        <h3 style="margin-top:22px">Boundaries</h3>
-        <p style="margin-bottom:0">Wisconsin Avenue from Whitehaven Parkway north to Fulton Street, extending west to 42nd Street at the edge of Glover-Archbold Park.</p>
+      <div class="life__col">
+        <h3>Housing</h3>
+        <p>Rows of 1920s and '30s brick rowhouses set the tone, filled out with garden apartment buildings and a scattering of postwar condos.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="getting-here">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <h2>Getting here</h2>
-        <p>Glover Park sits between two Metro corridors rather than directly on one.</p>
-      </div>
-      <div class="section-num">Getting here</div>
+  <section id="getting-there" class="section getting-there">
+    <div class="section__head">
+      <h2>Getting there</h2>
     </div>
-    <div class="commute-list">
-      <div class="commute-item"><b>Bus</b><span>Metrobus 30-series lines run the length of Wisconsin Avenue toward Georgetown and Friendship Heights.</span></div>
-      <div class="commute-item"><b>Metrorail</b><span>Closest stations are Tenleytown-AU and Woodley Park–Zoo, both a walk or short bus ride away.</span></div>
-      <div class="commute-item"><b>On foot</b><span>Georgetown's shops and the C&O Canal are about a half mile downhill to the south.</span></div>
-      <div class="commute-item"><b>By car</b><span>Whitehaven Parkway and Calvert Street connect to Rock Creek Parkway and the rest of the District.</span></div>
-    </div>
-  </div>
-</section>
+    <p class="getting-there__text">Glover Park sits just far enough from a Metro station that the bus does the heavy lifting — the D2, D6, and 30-series lines run along Wisconsin Avenue and Whitehaven Parkway, connecting to Foggy Bottom and Tenleytown-AU stations at either end.</p>
+  </section>
 
-<footer>
-  <div class="wrap">
-    <div class="wordmark">Glover Park<span class="dot" style="color:var(--gold)">.</span></div>
-    <p class="fine">An independent neighborhood guide to Glover Park, Washington, D.C. Not affiliated with any official city or civic body.</p>
-  </div>
+</main>
+
+<footer class="site-footer">
+  <p>A neighborhood guide, built for the web. Sourced from local history and public records — corrections welcome.</p>
 </footer>
 
 <script src="script.js"></script>
