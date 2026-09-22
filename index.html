@@ -1,42 +1,108 @@
-<section class="data-section" id="data">
-  <div class="section-label">PUBLIC DATA</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glover Park — A wooded valley in the middle of the city</title>
+<meta name="description" content="A neighborhood guide to Glover Park, Washington, D.C. — the streets, the stream valley, and the people.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <h2>Glover Park,<br>by the numbers.</h2>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">Glover Park</a>
+    <nav class="primary-nav">
+      <a href="#about">About</a>
+      <a href="#park">The Valley</a>
+      <a href="#data">Neighborhood Data</a>
+      <a href="#involved">Get Involved</a>
+    </nav>
+  </div>
+</header>
 
-  <p class="section-intro">
-    Glover Park is part of DC's Neighborhood Cluster 14,
-    a planning area that also includes Cathedral Heights
-    and McLean Gardens. Public data helps show how the
-    neighborhood fits into the larger Ward 3 community.
-  </p>
+<main id="top">
 
-  <div class="stats-grid">
-
-    <div class="stat-card">
-      <div class="stat-number">85,301</div>
-      <div class="stat-label">Ward 3 residents</div>
-      <div class="stat-source">2020 Census</div>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="kicker">Washington, D.C. &nbsp;·&nbsp; between Georgetown and Cathedral Heights</p>
+      <h1>A wooded valley runs through the middle of this neighborhood.</h1>
+      <p class="hero-lede">Glover Park sits on the hill above the Potomac, split down the middle by a mile and a half of unbroken forest. Above ground it's rowhouses, a main street, and a rec center. Below the canopy, it's still a stream valley.</p>
     </div>
+    <svg class="contour" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,140 C150,80 300,190 480,120 C660,50 820,170 1000,110 C1080,85 1150,95 1200,100" />
+      <path d="M0,190 C160,150 320,230 500,170 C680,110 830,210 1010,160 C1090,140 1150,150 1200,150" />
+      <path d="M0,230 C170,210 330,255 520,215 C700,175 840,240 1020,205 C1095,190 1150,195 1200,195" />
+    </svg>
+  </section>
 
-    <div class="stat-card">
-      <div class="stat-number">76,818</div>
-      <div class="stat-label">Ward 3 residents</div>
-      <div class="stat-source">2025 estimate</div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-number">14</div>
-      <div class="stat-label">Neighborhood Cluster</div>
-      <div class="stat-source">
-        Glover Park · Cathedral Heights · McLean Gardens
+  <section id="about" class="section about">
+    <div class="wrap two-col">
+      <div class="col-label">
+        <h2>About the neighborhood</h2>
+      </div>
+      <div class="col-body">
+        <p>Glover Park takes its name from Charles C. Glover, the banker who donated the land that became the park running through it. The neighborhood itself grew up in the early twentieth century as rowhouses and apartment buildings filled in the hillside east of the valley, close enough to Georgetown to walk and far enough to have its own main street.</p>
+        <p>Wisconsin Avenue carries the commercial strip — restaurants, a hardware store, a Whole Foods that replaced a Safeway everyone still calls the "Social Safeway." Immediately west and south, the ground drops into forest.</p>
       </div>
     </div>
+  </section>
 
-  </div>
+  <section id="park" class="section park">
+    <div class="wrap">
+      <h2 class="section-title-light">Glover-Archbold Park</h2>
+      <div class="park-grid">
+        <div class="park-card">
+          <h3>The trail</h3>
+          <p>A 1.5-mile dirt trail follows Foundry Branch from Van Ness Street down to the Potomac, connecting to the Whitehaven and C&amp;O Canal trails. No pavement, no lights — it stays a real forest trail, not a park path.</p>
+        </div>
+        <div class="park-card">
+          <h3>Guy Mason Recreation Center</h3>
+          <p>The neighborhood's rec center sits at the park's edge on Calvert Street: a community room, a playground, and a garden plot program that's been oversubscribed for years.</p>
+        </div>
+        <div class="park-card">
+          <h3>The canopy</h3>
+          <p>Tulip poplar, beech, and oak hold the slopes. The park is one of the largest unbroken stream valley forests inside the District, and it's managed jointly by the National Park Service and the D.C. Department of Transportation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="data-note">
-    Neighborhood boundaries in DC are informal and can vary by
-    dataset. These figures should not be interpreted as the
-    population of Glover Park alone.
+  <section id="data" class="section data">
+    <div class="wrap">
+      <div class="data-head">
+        <h2>Neighborhood data</h2>
+        <p>Pulled live from <a href="https://catalog.data.gov" target="_blank" rel="noopener">catalog.data.gov</a>, the federal open-data catalog. It's a starting point for looking into trees, trails, and zoning around Glover Park — not a curated or verified list.</p>
+      </div>
+      <ul id="dataset-list" class="dataset-list" aria-live="polite">
+        <li class="dataset-status">Loading datasets…</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="involved" class="section involved">
+    <div class="wrap two-col">
+      <div class="col-label">
+        <h2>Get involved</h2>
+      </div>
+      <div class="col-body">
+        <p>The Glover Park Citizens' Association meets monthly and is the main channel for zoning questions, street issues, and park upkeep. The Friends of Glover-Archbold Park organize trail clean-ups a few times a year — muddy work, worth doing.</p>
+        <p>If you're new here: start at Guy Mason on a Saturday morning, or just walk the trail once. Most of what you need to know about the neighborhood is down there.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Glover Park, Washington, D.C. — a resident-made guide, not an official neighborhood site.</p>
   </div>
-</section>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
